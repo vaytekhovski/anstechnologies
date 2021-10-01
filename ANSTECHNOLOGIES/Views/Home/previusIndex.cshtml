@@ -1,0 +1,461 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--- Basic Page Needs  -->
+    <meta charset="utf-8">
+    <title>ANS Technologies | @Localizer["AI_Based"]</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Mobile Specific Meta  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- CSS -->
+    <link rel="stylesheet" href="~/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/assets/css/jquery-ui.css">
+    <link rel="stylesheet" href="~/assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/assets/css/slicknav.min.css">
+    <link rel="stylesheet" href="~/assets/css/magnificpopup.css">
+    <link rel="stylesheet" href="~/assets/css/jquery.mb.YTPlayer.min.css">
+    <link rel="stylesheet" href="~/assets/css/typography.css">
+    <link rel="stylesheet" href="~/assets/css/style.css">
+    <link rel="stylesheet" href="~/assets/css/responsive.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="assets/img/icon/favicon.ico">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+
+    <link rel="stylesheet" href="~/css/nicepage.css" media="screen">
+    <link rel="stylesheet" href="~/css/projects.css" media="screen">
+    <link rel="stylesheet" href="~/css/ans_tech_info.css" media="screen">
+    <script class="u-script" type="text/javascript" src="~/js/jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="~/js/nicepage.js" defer=""></script>
+    <style type="text/css">
+        @@media screen and (max-width: 768px) {
+    .mobile-hide{
+        display:none !important;
+    }
+
+    h2{
+        1.5rem;
+    }
+}
+    </style>
+</head>
+
+<body>
+    <!-- preloader area start -->
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>
+    <!-- preloader area end -->
+    <!-- header area start -->
+    <header id="header">
+        <div class="header-area">
+
+            <div class="container">
+                <div class="row">
+                    <div class="menu-area">
+                        <div class="col-md-3 col-sm-12 col-xs-12">
+                            <div class="logo">
+                                <a href="index.html"><img src="~/logo.png"></a>
+                            </div>
+                        </div>
+                        <div class="col-md-9 hidden-xs hidden-sm">
+                            <div class="main-menu">
+                                <nav class="nav-menu">
+                                    <ul>
+                                        <li class="active"><a href="#home">@Localizer["HomeLink"]</a></li>
+                                        <li><a href="#feature">@Localizer["FeaturesLink"]</a></li>
+                                        <li><a href="#projects">@Localizer["Projects"]</a></li>
+                                        <li><a href="#team">@Localizer["Team"]</a></li>
+                                        <li><a href="#contact">@Localizer["ContactLink"]</a></li>
+                                        <li>
+                                            @await Html.PartialAsync("_SelectLanguagePartial")
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-xs-12 visible-sm visible-xs">
+                            <div class="mobile_menu"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header area end -->
+    <!-- slider area start -->
+    <section id="home" class="slider-area warm-canvas">
+        <div class="container">
+            <div class="col-md-6 col-sm-6 hidden-xs">
+                <div class="row">
+                    <div class="slider-img">
+                        <img src="~/mainPic.png" width="500" height="500" alt="slider image">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="row">
+                    <div class="slider-inner text-right">
+                        <h2>@Localizer["AI_Based"]</h2>
+                        <h5>@Localizer["OnlyMath"]</h5>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- slider area end -->
+    <!-- service area start -->
+    <div class="service-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <a href="http://134.122.64.43">
+                        <div class="service-single">
+                            <img src="~/datavisiologo.png" alt="service image">
+                            <h2>DataVisio</h2>
+                            <p>@Localizer["DataVisio_About"]</p>
+                        </div>
+                    </a>
+                </div>
+                <a href="http://pricing.a-n-s-technologies.com/">
+                    <div class="col-md-4 col-sm-4 col-xs-12 col-6">
+                        <div class="service-single">
+                            <img src="~/pricinglogo.png" alt="service image">
+                            <h2>ANS Pricing</h2>
+                            <p>@Localizer["ANSPrising_About"]</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#dotnet_dev">
+                    <div class="col-md-4 col-sm-4 col-xs-12 col-6">
+                        <div class="service-single">
+                            <img src="~/netlogo.png" alt="service image">
+                            <h2>.NET</h2>
+                            <p>@Localizer["NET_About"]</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- service area end -->
+    <div class="mobile-hide">
+        <div class="section-title" style=" padding-top: 50px;">
+
+            <h2>@Localizer["anstech_it"]</h2>
+        </div>
+        <section class="u-clearfix u-section-ans-1" id="sec-6e28">
+            <div class="u-clearfix u-sheet u-sheet-1">
+                <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+                    <div class="u-layout">
+                        <div class="u-layout-col">
+                            <div class="u-size-30">
+                                <div class="u-layout-row">
+                                    <div class="u-align-left u-container-style u-layout-cell u-left-cell u-size-20 u-layout-cell-1">
+                                        <div class="u-container-layout u-valign-middle u-container-layout-1">
+                                            <h4 class="u-text u-text-1">@Localizer["anstech_it_1"]</h4><span class="u-icon u-icon-circle u-text-grey-75 u-icon-1">
+                                                <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 512 512" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-1487"></use></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content" viewBox="0 0 512 512" id="svg-1487"><path d="m369.164062 174.769531c7.8125 7.8125 7.8125 20.476563 0 28.285157l-134.171874 134.175781c-7.8125 7.808593-20.472657 7.808593-28.285157 0l-63.871093-63.875c-7.8125-7.808594-7.8125-20.472657 0-28.28125 7.808593-7.8125 20.472656-7.8125 28.28125 0l49.730468 49.730469 120.03125-120.035157c7.8125-7.808593 20.476563-7.808593 28.285156 0zm142.835938 81.230469c0 141.503906-114.515625 256-256 256-141.503906 0-256-114.515625-256-256 0-141.503906 114.515625-256 256-256 141.503906 0 256 114.515625 256 256zm-40 0c0-119.394531-96.621094-216-216-216-119.394531 0-216 96.621094-216 216 0 119.394531 96.621094 216 216 216 119.394531 0 216-96.621094 216-216zm0 0"></path></svg>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="u-align-left u-container-style u-layout-cell u-size-20 u-layout-cell-2">
+                                        <div class="u-container-layout u-valign-middle u-container-layout-2">
+                                            <h4 class="u-text u-text-2">@Localizer["anstech_it_2"]</h4><span class="u-icon u-icon-circle u-text-grey-75 u-icon-2" style="top: 20px;">
+                                                <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 512 512" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-1487"></use></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content" viewBox="0 0 512 512" id="svg-1487"><path d="m369.164062 174.769531c7.8125 7.8125 7.8125 20.476563 0 28.285157l-134.171874 134.175781c-7.8125 7.808593-20.472657 7.808593-28.285157 0l-63.871093-63.875c-7.8125-7.808594-7.8125-20.472657 0-28.28125 7.808593-7.8125 20.472656-7.8125 28.28125 0l49.730468 49.730469 120.03125-120.035157c7.8125-7.808593 20.476563-7.808593 28.285156 0zm142.835938 81.230469c0 141.503906-114.515625 256-256 256-141.503906 0-256-114.515625-256-256 0-141.503906 114.515625-256 256-256 141.503906 0 256 114.515625 256 256zm-40 0c0-119.394531-96.621094-216-216-216-119.394531 0-216 96.621094-216 216 0 119.394531 96.621094 216 216 216 119.394531 0 216-96.621094 216-216zm0 0"></path></svg>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="u-align-left u-container-style u-layout-cell u-right-cell u-size-20 u-layout-cell-3">
+                                        <div class="u-container-layout u-valign-middle u-container-layout-3">
+                                            <h4 class="u-text u-text-3">@Localizer["anstech_it_3"]</h4><span class="u-icon u-icon-circle u-text-grey-75 u-icon-3">
+                                                <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 512 512" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-1487"></use></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content" viewBox="0 0 512 512" id="svg-1487"><path d="m369.164062 174.769531c7.8125 7.8125 7.8125 20.476563 0 28.285157l-134.171874 134.175781c-7.8125 7.808593-20.472657 7.808593-28.285157 0l-63.871093-63.875c-7.8125-7.808594-7.8125-20.472657 0-28.28125 7.808593-7.8125 20.472656-7.8125 28.28125 0l49.730468 49.730469 120.03125-120.035157c7.8125-7.808593 20.476563-7.808593 28.285156 0zm142.835938 81.230469c0 141.503906-114.515625 256-256 256-141.503906 0-256-114.515625-256-256 0-141.503906 114.515625-256 256-256 141.503906 0 256 114.515625 256 256zm-40 0c0-119.394531-96.621094-216-216-216-119.394531 0-216 96.621094-216 216 0 119.394531 96.621094 216 216 216 119.394531 0 216-96.621094 216-216zm0 0"></path></svg>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="u-size-30">
+                                <div class="u-layout-row">
+                                    <div class="u-align-left u-container-style u-layout-cell u-left-cell u-size-20 u-layout-cell-4">
+                                        <div class="u-container-layout u-valign-middle u-container-layout-4">
+                                            <h4 class="u-text u-text-4">@Localizer["anstech_it_4"]</h4><span class="u-icon u-icon-circle u-text-grey-75 u-icon-4">
+                                                <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 512 512" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-1487"></use></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content" viewBox="0 0 512 512" id="svg-1487"><path d="m369.164062 174.769531c7.8125 7.8125 7.8125 20.476563 0 28.285157l-134.171874 134.175781c-7.8125 7.808593-20.472657 7.808593-28.285157 0l-63.871093-63.875c-7.8125-7.808594-7.8125-20.472657 0-28.28125 7.808593-7.8125 20.472656-7.8125 28.28125 0l49.730468 49.730469 120.03125-120.035157c7.8125-7.808593 20.476563-7.808593 28.285156 0zm142.835938 81.230469c0 141.503906-114.515625 256-256 256-141.503906 0-256-114.515625-256-256 0-141.503906 114.515625-256 256-256 141.503906 0 256 114.515625 256 256zm-40 0c0-119.394531-96.621094-216-216-216-119.394531 0-216 96.621094-216 216 0 119.394531 96.621094 216 216 216 119.394531 0 216-96.621094 216-216zm0 0"></path></svg>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="u-align-left u-container-style u-layout-cell u-size-20 u-layout-cell-5">
+                                        <div class="u-container-layout u-valign-middle u-container-layout-5">
+                                            <h4 class="u-text u-text-5">@Localizer["anstech_it_5"]</h4><span class="u-icon u-icon-circle u-text-grey-75 u-icon-5">
+                                                <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 512 512" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-1487"></use></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content" viewBox="0 0 512 512" id="svg-1487"><path d="m369.164062 174.769531c7.8125 7.8125 7.8125 20.476563 0 28.285157l-134.171874 134.175781c-7.8125 7.808593-20.472657 7.808593-28.285157 0l-63.871093-63.875c-7.8125-7.808594-7.8125-20.472657 0-28.28125 7.808593-7.8125 20.472656-7.8125 28.28125 0l49.730468 49.730469 120.03125-120.035157c7.8125-7.808593 20.476563-7.808593 28.285156 0zm142.835938 81.230469c0 141.503906-114.515625 256-256 256-141.503906 0-256-114.515625-256-256 0-141.503906 114.515625-256 256-256 141.503906 0 256 114.515625 256 256zm-40 0c0-119.394531-96.621094-216-216-216-119.394531 0-216 96.621094-216 216 0 119.394531 96.621094 216 216 216 119.394531 0 216-96.621094 216-216zm0 0"></path></svg>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="u-align-left u-container-style u-layout-cell u-right-cell u-size-20 u-layout-cell-6">
+                                        <div class="u-container-layout u-valign-middle u-container-layout-6">
+                                            <h4 class="u-text u-text-6">@Localizer["anstech_it_6"]</h4><span class="u-icon u-icon-circle u-text-grey-75 u-icon-6">
+                                                <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 512 512" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-1487"></use></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content" viewBox="0 0 512 512" id="svg-1487"><path d="m369.164062 174.769531c7.8125 7.8125 7.8125 20.476563 0 28.285157l-134.171874 134.175781c-7.8125 7.808593-20.472657 7.808593-28.285157 0l-63.871093-63.875c-7.8125-7.808594-7.8125-20.472657 0-28.28125 7.808593-7.8125 20.472656-7.8125 28.28125 0l49.730468 49.730469 120.03125-120.035157c7.8125-7.808593 20.476563-7.808593 28.285156 0zm142.835938 81.230469c0 141.503906-114.515625 256-256 256-141.503906 0-256-114.515625-256-256 0-141.503906 114.515625-256 256-256 141.503906 0 256 114.515625 256 256zm-40 0c0-119.394531-96.621094-216-216-216-119.394531 0-216 96.621094-216 216 0 119.394531 96.621094 216 216 216 119.394531 0 216-96.621094 216-216zm0 0"></path></svg>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- feature area start -->
+    <section class="feature-area bg-gray ptb--100" id="feature">
+        <div class="container">
+            <div class="section-title">
+
+                <h2>@Localizer["Features"]</h2>
+                <p>@Localizer["Features_down_text"]</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="ft-content rtl">
+                        <div class="ft-single">
+                            <img src="~/assets/img/icon/feature/Exchanges.png" class="icons" alt="icon">
+                            <div class="meta-content">
+                                <h2 style="font-size: 1.75rem !important">@Localizer["Exchanges"]</h2>
+                                <p>@Localizer["Exchanges_About"]</p>
+                            </div>
+                        </div>
+                        <div class="ft-single">
+                            <img src="~/assets/img/icon/feature/Retail.png" class="icons" alt="icon">
+                            <div class="meta-content">
+                                <h2>@Localizer["Retail"]</h2>
+                                <p>@Localizer["Retail_About"]</p>
+                            </div>
+                        </div>
+                        <div class="ft-single" id="dotnet_dev">
+                            <img src="~/assets/img/icon/feature/Analytics.png" class="icons" alt="icon">
+                            <div class="meta-content">
+                                <h2>@Localizer["Analytics"]</h2>
+                                <p>@Localizer["Analytics_About"]</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 hidden-sm col-xs-12">
+                    <div class="ft-screen-img">
+                        <img src="~/secondPic.png" alt="image">
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="ft-content">
+                        <div class="ft-single">
+                            <img src="~/assets/img/icon/feature/Robotics.png" class="icons" alt="icon">
+                            <div class="meta-content">
+                                <h2>@Localizer["Robotics"]</h2>
+                                <p>@Localizer["Robotics_About"]</p>
+                            </div>
+                        </div>
+                        <div class="ft-single">
+                            <img src="~/assets/img/icon/feature/Predictions.png" class="icons" alt="icon">
+                            <div class="meta-content">
+                                <h2 style="font-size:2rem !important">@Localizer["Predictions"]</h2>
+                                <p>@Localizer["Predictions_About"]</p>
+                            </div>
+                        </div>
+                        <div class="ft-single">
+                            <img src="~/assets/img/icon/feature/Control.png" class="icons" alt="icon">
+                            <div class="meta-content">
+                                <h2>@Localizer["Control"]</h2>
+                                <p>@Localizer["Control_About"]</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- feature area end -->
+    <div class="mobile-hide">
+        <div style="width: 10%; float: left; margin-left: 150px;"> <img src="~/netlogo.png" alt="service image"></div>
+        <div style="float: left; width: 80%;">
+            <div class="section-title" style="margin: auto; width: 90%; margin-bottom: 100px;">
+
+                <h2 style=" margin-right: 300px;">@Localizer["out_net"]</h2>
+                <p style="text-align:left">@Localizer["net_dev_description"]</p>
+            </div>
+        </div>
+    </div>
+    <div class="section-title">
+
+        <h2>@Localizer["Our_Team"]</h2>
+    </div>
+    @Html.Partial("portfolio")
+    <div class="section-title">
+
+        <h2>@Localizer["Our_Projects"]</h2>
+        <p>@Localizer["Our_Projects_down"]</p>
+    </div>
+
+    <section class="u-clearfix u-section-projects-1" id="projects" style=" background-color: #fafafa !important">
+        <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+            <div class="u-clearfix u-expanded-width u-gutter-20 u-layout-wrap u-layout-wrap-1">
+                <div class="u-layout">
+                    <div class="u-layout-col">
+                        <div class="u-size-30">
+                            <div class="u-layout-row">
+                                <div class="u-container-style u-layout-cell u-left-cell u-size-20 u-layout-cell-1">
+                                    <div class="u-container-layout u-valign-top u-container-layout-1">
+                                        <img src="~/img/photo_2020-10-23_13-45-19.png" style=" height: 200px; width: 200px !important; left: 50px;" alt="" class="u-expanded-width u-image u-image-default u-image-1" data-image-width="870" data-image-height="870">
+                                        <h4 class="u-text u-text-1" style="border-top:1px solid; border-bottom:1px solid;text-align:center">
+                                            @Localizer["TEC"]
+                                        </h4>
+                                        <p class="u-small-text u-text u-text-default u-text-font u-text-variant u-text-2">
+                                            @Localizer["TEC_description"]
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="u-container-style u-layout-cell u-size-20 u-layout-cell-2">
+                                    <div class="u-container-layout u-valign-top u-container-layout-2">
+                                        <img src="~/img/logo_8548_15325035142.png" style=" height: 200px; width: 200px !important; left: 50px;" alt="" class="u-expanded-width u-image u-image-default u-image-2">
+                                        <h4 class="u-text u-text-default u-text-3" style="border-top:1px solid; border-bottom:1px solid;text-align:center"> @Localizer["BTS"]</h4>
+                                        <p class="u-small-text u-text u-text-default u-text-font u-text-variant u-text-4">
+                                            @Localizer["BTS_description"]
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="u-container-style u-layout-cell u-right-cell u-size-20 u-layout-cell-3">
+                                    <div class="u-container-layout u-valign-top u-container-layout-3">
+                                        <img src="~/img/photo_2020-10-23_13-45-33.png" style=" height: 200px; width: 200px !important; left: 50px;" alt="" class="u-expanded-width u-image u-image-default u-image-3" data-image-width="300" data-image-height="300">
+                                        <h4 class="u-text u-text-default u-text-5" style="border-top:1px solid; border-bottom:1px solid;text-align:center">  @Localizer["lightsamerica"]</h4>
+                                        <p class="u-small-text u-text u-text-default u-text-font u-text-variant u-text-6">
+                                            @Localizer["lightsamerica_description"]
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="u-size-30">
+                            <div class="u-layout-row">
+                                <div class="u-container-style u-layout-cell u-left-cell u-size-20 u-layout-cell-4">
+                                    <div class="u-container-layout u-valign-top u-container-layout-4">
+                                        <img src="~/img/photo_2020-10-23_13-45-34.png" style=" height: 200px; width: 200px !important; left: 50px;" alt="" class="u-expanded-width u-image u-image-default u-image-4" data-image-width="500" data-image-height="500">
+                                        <h4 class="u-text u-text-default u-text-7" style="border-top:1px solid; border-bottom:1px solid;text-align:center">
+                                            @Localizer["Alpha Recyclage"]<br>
+                                        </h4>
+                                        <p class="u-small-text u-text u-text-default u-text-font u-text-variant u-text-8">
+                                            @Localizer["Alpha Recyclage_description"]
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="u-container-style u-layout-cell u-size-20 u-layout-cell-5">
+                                    <div class="u-container-layout u-container-layout-5">
+                                        <img src="~/img/photo_2020-10-23_13-45-30.png" style=" height: 200px; width: 200px !important; left: 50px;" alt="" class="u-image u-image-default u-image-5" data-image-width="558" data-image-height="558">
+                                        <h4 class="u-text u-text-default u-text-9" style="border-top:1px solid; border-bottom:1px solid;text-align:center;    width: 100%;">@Localizer["BMZ"]</h4>
+                                        <p class="u-small-text u-text u-text-default u-text-font u-text-variant u-text-10">
+                                            @Localizer["BMZ_description"]
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="u-container-style u-layout-cell u-right-cell u-size-20 u-layout-cell-6">
+                                    <div class="u-container-layout u-valign-top u-container-layout-6">
+                                        <img src="~/img/Sellbery_2_1-1.png" style=" height: 200px; width: 200px !important; left: 50px;" alt="" class="u-expanded-width u-image u-image-default u-image-6" data-image-width="500" data-image-height="500">
+                                        <h4 class="u-text u-text-default u-text-11" style="border-top:1px solid; border-bottom:1px solid;text-align:center">@Localizer["sellbery"]</h4>
+                                        <p class="u-small-text u-text u-text-default u-text-font u-text-variant u-text-12">
+                                            @Localizer["sellbery_description"]
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact area start -->
+    <section class="contact-area ptb--100" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>@Localizer["ContactUs"]</h2>
+                <p>@Localizer["ContactUsDownText"]</p>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="contact-form">
+                        <form action="#">
+                            <input type="text" name="name" placeholder="@Localizer["ContactUsName"]">
+                            <input type="text" name="email" placeholder="@Localizer["ContactUsEmail"]">
+                            <textarea name="msg" id="msg" placeholder="@Localizer["ContactUsMessage"]"></textarea>
+                            <input type="submit" value="@Localizer["ContactUsSend"]" id="send">
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="contact_info">
+                        <div class="s-info">
+                            <i class="fa fa-map-marker"></i>
+                            <div class="meta-content">
+                                <span>@Localizer["Address"]</span>
+                                <span>@Localizer["Address2"]</span>
+                            </div>
+                        </div>
+                        <div class="s-info">
+                            <i class="fa fa-mobile"></i>
+                            <div class="meta-content">
+                                <span>+375295379205</span>
+                            </div>
+                        </div>
+                        <div class="s-info">
+                            <i class="fa fa-paper-plane"></i>
+                            <div class="meta-content">
+                                <span>anstehnol@gmail.com</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact area end -->
+    <!-- footer area start -->
+    <footer>
+        <div class="footer-area">
+            <div class="container">
+                <p>
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    Copyright &copy;
+                    <script>document.write(new Date().getFullYear());</script>
+                    @Localizer["AllRightsReserved"] <a href="#" style="font-size: 16px" target="_blank">ANS Technologies</a>
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- footer area end -->
+    <!-- Scripts -->
+    <script src="~/assets/js/jquery-3.2.0.min.js"></script>
+    <script src="~/assets/js/jquery-ui.js"></script>
+    <script src="~/assets/js/bootstrap.min.js"></script>
+    <script src="~/assets/js/jquery.slicknav.min.js"></script>
+    <script src="~/assets/js/owl.carousel.min.js"></script>
+    <script src="~/assets/js/magnific-popup.min.js"></script>
+    <script src="~/assets/js/counterup.js"></script>
+    <script src="~/assets/js/jquery.waypoints.min.js"></script>
+    <script src="~/assets/js/jquery.mb.YTPlayer.min.js"></script>
+    <script src="~/assets/js/warm-canvas.js"></script>
+    <script src="~/assets/js/theme.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,442 @@
+﻿@{
+    Layout = null;
+
+}
+
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+
+
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="FutureTechnologies, Can robots replace HR?, Tesla electric trucks, The robots are coming, Gadgets of the Future">
+    <meta name="description" content="">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <title>Home</title>
+    <link rel="stylesheet" href="../css/nicepage.css" media="screen">
+    <link rel="stylesheet" href="../css/Home.css" media="screen">
+    <script class="u-script" type="text/javascript" src="../js/jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="../js/nicepage.js" defer=""></script>
+    <meta name="generator" content="Nicepage 2.28.1, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=text-font">
+
+
+    <meta property="og:title" content="Home">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#8ca2cb">
+    <link rel="canonical" href="index.html">
+    <meta property="og:url" content="index.html">
+    <link href="//db.onlinewebfonts.com/c/00d5a78493aed4b11e2584ad7cceee49?family=Gilroy+ExtraBold" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        @@import url(//db.onlinewebfonts.com/c/00d5a78493aed4b11e2584ad7cceee49?family=Gilroy+ExtraBold);
+
+        @@font-face {
+            font-family: "Gilroy ExtraBold";
+            src: url("//db.onlinewebfonts.com/t/00d5a78493aed4b11e2584ad7cceee49.eot");
+            src: url("//db.onlinewebfonts.com/t/00d5a78493aed4b11e2584ad7cceee49.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/00d5a78493aed4b11e2584ad7cceee49.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/00d5a78493aed4b11e2584ad7cceee49.woff") format("woff"), url("//db.onlinewebfonts.com/t/00d5a78493aed4b11e2584ad7cceee49.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/00d5a78493aed4b11e2584ad7cceee49.svg#Gilroy ExtraBold") format("svg");
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: Gilroy extrabold;
+        }
+
+        .our_projects {
+            margin: 0px auto;
+        }
+
+        footer p {
+            font-size: 0.75rem !important;
+            margin-top: 10px !important;
+            margin-bottom: 0px !important;
+        }
+
+        footer h4 {
+            font-size: 1rem !important;
+        }
+
+        @@media screen and (max-width: 768px) {
+            .mobile-hide {
+                display: none !important;
+            }
+
+            .our_projects {
+                margin: 0px;
+            }
+
+            .h1700 {
+                height: 1700px !important;
+            }
+
+            .h900 {
+                height: 900px !important;
+            }
+        }
+    </style>
+
+</head>
+<body data-home-page="Home.html" data-home-page-title="Home" class="u-body">
+    <header class="u-clearfix u-header u-header" id="sec-d5ff">
+        <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+            <a class="u-align-left u-image u-logo u-image-1" title="Home" href="/">
+                <img src="../images/anslogo.png" class="u-logo-image u-logo-image-1" data-image-width="193.2858" style="margin-bottom: 6px;">
+            </a>
+            <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1">
+                <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0; font-weight: 700; text-transform: uppercase;">
+                    <a class="u-button-style u-custom-active-border-color u-custom-border u-custom-borders u-custom-hover-border-color u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-color u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#">
+                        <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use></svg>
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <defs>
+                                <symbol id="menu-hamburger" viewBox="0 0 16 16" style="width: 16px; height: 16px;">
+                                    <rect y="1" width="16" height="2"></rect>
+                                    <rect y="7" width="16" height="2"></rect>
+                                    <rect y="13" width="16" height="2"></rect>
+                                </symbol>
+                            </defs>
+                        </svg>
+                    </a>
+                </div>
+                <div class="u-custom-menu u-nav-container" style="padding-top: 15px;">
+                    <ul class="u-nav u-spacing-30 u-unstyled u-nav-1">
+                        <li class="u-nav-item">
+                            <a class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-grey-90" href="#carousel_c23b" style="padding: 10px 0;">@Localizer["HomeLink"]</a>
+                        </li>
+                        <li class="u-nav-item">
+                            <a class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-grey-90" href="#sec-4f3f" style="padding: 10px 0;">@Localizer["UsingLink"]</a>
+                        </li>
+                        <li class="u-nav-item">
+                            <a class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-grey-90" href="#sec-f65e" style="padding: 10px 0;">@Localizer["DevLink"]</a>
+                        </li>
+                        <li class="u-nav-item">
+                            <a class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-grey-90" href="#carousel_cc4b" style="padding: 10px 0;">@Localizer["TeamLink"]</a>
+                        </li>
+                        <li class="u-nav-item">
+                            <a class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-grey-90" href="#sec-2f6e" style="padding: 10px 0;">@Localizer["ProjectsLink"]</a>
+                        </li>
+                        <li class="u-nav-item">
+                            @await Html.PartialAsync("_SelectLanguagePartial")
+                        </li>
+                    </ul>
+                </div>
+                <div class="u-custom-menu u-nav-container-collapse">
+                    <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+                        <div class="u-menu-close"></div>
+                        <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2">
+                            <li class="u-nav-item">
+                                <a class="u-button-style u-nav-link" href="#carousel_c23b" style="padding: 8px 0;">@Localizer["HomeLink"]</a>
+                            </li>
+                            <li class="u-nav-item">
+                                <a class="u-button-style u-nav-link" href="#sec-4f3f" style="padding: 8px 0;">@Localizer["UsingLink"]</a>
+                            </li>
+                            <li class="u-nav-item">
+                                <a class="u-button-style u-nav-link" href="#sec-f65e" style="padding: 8px 0;">@Localizer["DevLink"]</a>
+                            </li>
+                            <li class="u-nav-item">
+                                <a class="u-button-style u-nav-link" href="#carousel_cc4b" style="padding: 8px 0;">@Localizer["TeamLink"]</a>
+                            </li>
+                            <li class="u-nav-item">
+                                <a class="u-button-style u-nav-link" href="#sec-2f6e" style="padding: 8px 0;">@Localizer["ProjectsLink"]</a>
+                            </li>
+                            <li class="u-nav-item">
+                                @await Html.PartialAsync("_SelectLanguagePartial")
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="u-clearfix u-expanded-width-lg u-expanded-width-md u-expanded-width-xl u-image u-section-1" id="carousel_c23b">
+        <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+            <div class="u-layout">
+                <div class="u-layout-row">
+                    <div class="u-container-style u-image u-layout-cell u-left-cell u-size-30 u-image-1" data-image-width="960" data-image-height="640">
+                        <div class="u-container-layout"></div>
+                    </div>
+                    <div class="u-container-style u-expand-resize u-image u-layout-cell u-right-cell u-size-30 u-image-2">
+                        <div class="u-container-layout">
+                            <div class="u-container-style u-expanded-width-xs u-group u-image u-opacity u-opacity-70 u-image-3">
+                                <div class="u-container-layout u-container-layout-3"></div>
+                            </div>
+                            <div class="u-border-6 u-border-white u-container-style u-group u-group-2" style="background-color: white;">
+                                <div class="u-container-layout u-valign-middle-md u-valign-middle-xl u-valign-middle-xs u-container-layout-4">
+                                    <h1 class="u-text u-title u-text-1">@Localizer["DevAnalyticsSystemTitle"]</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="u-clearfix u-section-2" id="sec-874c">
+        <div class="u-clearfix u-sheet u-sheet-1">
+            <div class="mobile-hide u-expanded-width-xs u-palette-1-base u-shape u-shape-rectangle u-shape-1" style="margin: -50px auto;height:70px">
+                <h2 class="u-text u-text-default" style="font-size: 1.875rem;font-size: 1.875rem;padding: 17px 42px;">@Localizer["OurCurrentProjects"]</h2>
+            </div>
+            <div class="u-clearfix u-expanded-width u-gutter-0 u-layout-spacing-vertical u-layout-wrap u-layout-wrap-1" style="margin-top: 60px;">
+                <div class="u-layout">
+                    <div class="u-layout-row">
+                        <div class="u-container-style u-expand-resize u-layout-cell u-left-cell u-size-20 u-size-20-md u-white u-layout-cell-1" data-href="https://datavisio.io/">
+                            <div class="u-container-layout">
+                                <span class="u-file-icon u-icon u-icon-circle u-text-palette-1-base u-icon-1"><img src="../images/DatavisioFavIcon.png" alt=""></span>
+                                <div class="u-container-style u-group u-group-1">
+                                    <div class="u-container-layout">
+                                        <h4 class="u-text u-text-body-color u-text-1">DataVisio</h4>
+                                        <p class="u-text u-text-black u-text-2">@Localizer["DataVisioLinkdesc"]</p>
+                                        <p class="u-text u-text-default u-text-3">@Localizer["LearnMore"]</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="u-container-style u-expand-resize u-layout-cell u-size-20 u-size-20-md u-layout-cell-2" data-href="https://pricing.a-n-s-technologies.com/">
+                            <div class="u-container-layout u-valign-top">
+                                <span class="u-file-icon u-icon u-icon-circle u-text-palette-1-base u-icon-2"><img src="../images/PricingFavIcon.png" alt=""></span>
+                                <div class="u-container-style u-group u-group-2">
+                                    <div class="u-container-layout">
+                                        <h4 class="u-text u-text-4">ANS Pricing</h4>
+                                        <p class="u-text u-text-5">@Localizer["ANSpricingLinkdesc"]</p>
+                                        <p class="u-text u-text-default u-text-6">@Localizer["LearnMore"]</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="u-container-style u-expand-resize u-layout-cell u-right-cell u-size-20 u-size-20-md u-layout-cell-3" data-href="#sec-f65e">
+                            <div class="u-container-layout u-valign-top-md">
+                                <span class="u-file-icon u-icon u-icon-circle u-text-palette-1-base u-icon-3"><img src="../images/16.jpg" alt=""></span>
+                                <div class="u-container-style u-group u-group-3">
+                                    <div class="u-container-layout u-container-layout-6">
+                                        <h4 class="u-text u-text-7">.NET</h4>
+                                        <p class="u-text u-text-8">@Localizer["NetLinkdesc"]</p>
+                                        <p class="u-text u-text-default u-text-9">@Localizer["LearnMore"]</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="h900 u-clearfix u-palette-5-dark-3 u-section-3" id="sec-4f3f">
+        <div class="u-expanded-height u-hidden-sm u-hidden-xs u-palette-1-base u-shape u-shape-rectangle u-shape-1"></div>
+        <div class="u-clearfix u-sheet u-sheet-1">
+            <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+                <div class="u-layout">
+                    <div class="u-layout-row">
+                        <div class="u-size-28">
+                            <div class="u-layout-col">
+                                
+                                <div class="u-container-style u-layout-cell u-left-cell u-size-20 u-layout-cell-3">
+                                    <div class="u-container-layout">
+                                        <h5 class="u-text u-text-1">@Localizer["ExchangeAnalytics"]</h5>
+                                        <p class="u-text u-text-2">@Localizer["ExchangeAnalyticsDesc"]</p>
+                                        <h5 class="u-text u-text-3">@Localizer["Retail"]</h5>
+                                        <p class="u-text u-text-4">@Localizer["RetailDesc"]</p>
+                                        <h5 class="u-text u-text-5">@Localizer["Analytics"]</h5>
+                                        <p class="u-text u-text-6">@Localizer["AnalyticsDesc"]</p>
+                                        <h5 class="u-text u-text-default u-text-7">@Localizer["Robototech"]</h5>
+                                        <p class="u-text u-text-8">@Localizer["RobototechDesc"]</p>
+                                        <h5 class="u-text u-text-default u-text-9">@Localizer["Forecasting"]</h5>
+                                        <p class="u-text u-text-10">@Localizer["ForecastingDesc"]</p>
+                                        <h5 class="u-text u-text-default u-text-11">@Localizer["Using"]</h5>
+                                        <p class="u-text u-text-12">@Localizer["UsingDesc"]</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mobile-hide u-size-32">
+                            <div class="u-layout-row">
+                                <div class="u-container-style u-layout-cell u-right-cell u-size-60 u-layout-cell-4">
+                                    <div class="u-container-layout">
+                                        <div class="u-align-right u-border-6 u-border-white u-container-style u-expanded-width-xs u-group u-group-1">
+                                            <div class="u-container-layout u-valign-middle u-container-layout-5">
+                                                <h1 class="u-text u-text-13">@Localizer["WhereCanUse"]</h1>
+                                                <h3 class="u-text u-text-14">@Localizer["AIBasedSystems"]</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="u-clearfix u-palette-5-light-3 u-section-4" id="sec-f65e">
+        <div class="u-clearfix u-sheet u-sheet-1">
+            <div class="u-clearfix u-expanded-width u-gutter-0 u-layout-wrap u-layout-wrap-1">
+                <div class="u-layout">
+                    <div class="u-layout-row">
+                        <div class="u-align-left u-container-style u-layout-cell u-right-cell u-size-30 u-layout-cell-1">
+                            <div class="u-container-layout u-valign-middle u-container-layout-1">
+                                <h1 class="u-text u-text-default u-text-1">@Localizer["NetDev"]</h1>
+                                <p class="u-text u-text-palette-1-dark-1 u-text-2">@Localizer["SoftwareForOurClients"]</p>
+                                <h6 class="u-text u-text-3">@Localizer["WeAlwaysOpen"]</h6>
+                            </div>
+                        </div>
+                        <div class="u-align-center u-container-style u-image u-layout-cell u-left-cell u-size-30 u-image-1" data-image-width="1476" data-image-height="1148">
+                            <div class="u-container-layout u-container-layout-2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="u-clearfix u-section-5 h1700" id="carousel_cc4b">
+        <div class="u-clearfix u-sheet u-sheet-1">
+            <div class="u-clearfix u-expanded-width u-gutter-30 u-layout-wrap u-layout-wrap-1">
+                <div class="u-gutter-0 u-layout">
+                    <div class="u-layout-row">
+                        <div class="u-size-30 u-size-60-md">
+                            <div class="u-layout-col">
+                                <div class="u-size-30">
+                                    <div class="u-layout-row">
+                                        <div class="u-container-style u-image u-layout-cell u-right-cell u-size-30 u-image-1" data-image-width="2535" data-image-height="1416">
+                                            <div class="u-container-layout"></div>
+                                        </div>
+                                        <div class="u-container-style u-image u-layout-cell u-size-30 u-image-2" data-image-width="1200" data-image-height="1600">
+                                            <div class="u-container-layout"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="u-size-30">
+                                    <div class="u-layout-row">
+                                        <div class="u-container-style u-image u-layout-cell u-right-cell u-size-30 u-image-3" data-image-width="1600" data-image-height="1200">
+                                            <div class="u-container-layout">
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="u-container-style u-image u-layout-cell u-size-30 u-image-4" data-image-width="1600" data-image-height="1328">
+                                            <div class="u-container-layout"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="u-size-30 u-size-60-md">
+                            <div class="u-layout-col">
+                                <div class="u-align-left u-container-style u-layout-cell u-left-cell u-size-60 u-layout-cell-5">
+                                    <div class="u-container-layout u-valign-middle-md u-valign-middle-sm u-container-layout-5">
+                                        <h2 class="u-text u-text-1">@Localizer["OurTeam"]</h2>
+                                        <p class="u-text u-text-2">@Localizer["OurTeamDesc1"]</p>
+                                        <p class="u-text u-text-3">@Localizer["OurTeamDesc2"]</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    @*<div style=" margin-top: 50px; padding: 0px 70px;"><h2 class="our_projects u-text u-text-default u-text-4" style="font-size: 1.875rem;">@Localizer["OurProjects"]</h2></div>
+    
+    <section class="mobile-hide u-clearfix u-section-6" id="sec-2f6e">
+
+        <div class="u-clearfix u-sheet u-sheet-1">
+            <div class="u-clearfix u-expanded-width-lg u-expanded-width-md u-expanded-width-xl u-expanded-width-xs u-gutter-30 u-layout-wrap u-layout-wrap-1">
+                <div class="u-layout">
+                    <div class="u-layout-row">
+                        <div class="u-container-style u-image u-layout-cell u-left-cell u-size-12 u-size-60-md u-image-1" data-image-width="500" data-image-height="500">
+                            <div class="u-container-layout"></div>
+                        </div>
+                        <div class="u-container-style u-image u-layout-cell u-size-12 u-size-60-md u-image-2" data-image-width="500" data-image-height="500">
+                            <div class="u-container-layout"></div>
+                        </div>
+                        <div class="u-container-style u-image u-layout-cell u-size-12 u-size-60-md u-image-3" data-image-width="300" data-image-height="300">
+                            <div class="u-container-layout"></div>
+                        </div>
+                        <div class="u-container-style u-image u-layout-cell u-size-12 u-size-60-md u-image-4" data-image-width="558" data-image-height="558">
+                            <div class="u-container-layout"></div>
+                        </div>
+                        <div class="u-container-style u-image u-layout-cell u-right-cell u-size-12 u-size-60-md u-image-5" data-image-width="243" data-image-height="243">
+                            <div class="u-container-layout"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="u-clearfix u-section-7" id="sec-2d43">
+        <div class="u-clearfix u-sheet u-sheet-1">
+            <div class="u-clearfix u-expanded-width u-gutter-0 u-layout-wrap u-layout-wrap-1">
+                <div class="u-layout">
+                    <div class="u-layout-row">
+                        <div class="u-container-style u-layout-cell u-left-cell u-size-12 u-size-60-md u-layout-cell-1">
+                            <div class="u-container-layout">
+                                <h4 class="u-text u-text-1">Alpha Recyclage</h4>
+                                <p class="u-text u-text-2">@Localizer["AlphaRecyclageDesc"]</p>
+                            </div>
+                        </div>
+                        <div class="u-container-style u-layout-cell u-size-12 u-size-60-md u-layout-cell-2">
+                            <div class="u-container-layout">
+                                <h4 class="u-text u-text-3">Sellbery.com</h4>
+                                <p class="u-text u-text-4">@Localizer["SellberyDesc"]</p>
+                            </div>
+                        </div>
+                        <div class="u-container-style u-layout-cell u-size-12 u-size-60-md u-layout-cell-3">
+                            <div class="u-container-layout">
+                                <h4 class="u-text u-text-5">Lightsamerica.com</h4>
+                                <p class="u-text u-text-6">@Localizer["LightsamericaDesc"]</p>
+                            </div>
+                        </div>
+                        <div class="u-container-style u-layout-cell u-size-12 u-size-60-md u-layout-cell-4">
+                            <div class="u-container-layout">
+                                <h4 class="u-text u-text-7">@Localizer["BMZ"]</h4>
+                                <p class="u-text u-text-8">@Localizer["BMZDesc"]</p>
+                            </div>
+                        </div>
+                        <div class="u-container-style u-layout-cell u-right-cell u-size-12 u-size-60-md u-layout-cell-5">
+                            <div class="u-container-layout">
+                                <h4 class="u-text u-text-9">@Localizer["BTS"]</h4>
+                                <p class="u-text u-text-10">@Localizer["BTSDesc"]</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>*@
+
+
+    <footer class="u-clearfix u-footer u-grey-80" id="sec-f2e8">
+        <div class="u-clearfix u-sheet u-sheet-1">
+            <div class="u-clearfix u-expanded-width u-gutter-30 u-layout-wrap u-layout-wrap-1">
+                <div class="u-gutter-0 u-layout">
+                    <div class="u-layout-row">
+                        <div class="u-align-center-sm u-align-center-xs u-align-left-lg u-align-left-md u-align-left-xl u-container-style u-layout-cell u-left-cell u-size-15 u-size-30-md u-layout-cell-1">
+                            <div class="u-container-layout u-valign-top u-container-layout-1">
+                                <h4 style=" margin: 0;" class="u-text u-text-default">@Localizer["Phone"]</h4>
+                                <p class=" u-large-text u-text u-text-variant"></p>
+                            </div>
+                        </div>
+                        <div class="u-align-center-sm u-align-center-xs u-container-style u-layout-cell u-size-15 u-size-30-md u-layout-cell-2">
+                            <div class="u-container-layout u-valign-top u-container-layout-2">
+                                <h4 style=" margin: 0;" class="u-text">@Localizer["Mail"]</h4>
+                                <p class=" u-large-text u-text u-text-default u-text-font u-text-variant">info@a-n-s-technologies.com</p>
+                            </div>
+                        </div>
+                        <div class="u-align-center-md u-align-center-sm u-align-center-xs u-container-style u-layout-cell u-size-15 u-size-30-md u-layout-cell-3">
+                            <div class="u-container-layout u-valign-top u-container-layout-3">
+                                <h4 style=" margin: 0;" class="u-text u-text-default">@Localizer["Address"]</h4>
+                                <p class="u-large-text u-text u-text-default u-text-font u-text-variant u-text-6">@Localizer["AddressDesc"]</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <p class="u-align-center u-small-text u-text u-text-variant u-text-9" style="bottom: 20px;">Copyright ©&nbsp;2020 All Rights Reserved ANS Technologies</p>
+        </div>
+    </footer>
+
+</body>
+</html>

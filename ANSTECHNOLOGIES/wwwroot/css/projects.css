@@ -1,0 +1,91 @@
+.u-section-projects-1 .u-sheet-1 {min-height: 793px}
+.u-section-projects-1 .u-layout-wrap-1 {margin-top: 60px; margin-bottom: 60px}
+.u-section-projects-1 .u-layout-cell-1 {min-height: 565px}
+.u-section-projects-1 .u-container-layout-1 {box-shadow: 0 0 8px 0 rgba(128,128,128,1); padding: 30px}
+.u-section-projects-1 .u-image-1 {height: 307px; margin: 0 auto 0 0}
+.u-section-projects-1 .u-text-1 {margin: 10px 43px 0 0}
+.u-section-projects-1 .u-text-2 {margin-left: 0; margin-bottom: 0; margin-top: 20px}
+.u-section-projects-1 .u-layout-cell-2 {min-height: 570px}
+.u-section-projects-1 .u-container-layout-2 {box-shadow: 0 0 8px 0 rgba(128,128,128,1); padding: 30px}
+.u-section-projects-1 .u-image-2 {height: 304px; margin: 0 auto 0 0}
+.u-section-projects-1 .u-text-3 {margin-left: 0; margin-bottom: 0; margin-top: 10px}
+.u-section-projects-1 .u-text-4 {margin-left: 0; margin-bottom: 0; margin-top: 20px}
+.u-section-projects-1 .u-layout-cell-3 {min-height: 565px}
+.u-section-projects-1 .u-container-layout-3 {box-shadow: 0 0 8px 0 rgba(128,128,128,1); padding: 30px}
+.u-section-projects-1 .u-image-3 {height: 307px; margin: 0 auto 0 0}
+.u-section-projects-1 .u-text-5 {margin-left: 0; margin-bottom: 0; margin-top: 10px}
+.u-section-projects-1 .u-text-6 {margin-left: 0; margin-bottom: 0; margin-top: 20px}
+.u-section-projects-1 .u-layout-cell-4 {min-height: 565px}
+.u-section-projects-1 .u-container-layout-4 {box-shadow: 0 0 8px 0 rgba(128,128,128,1); padding: 30px}
+.u-section-projects-1 .u-image-4 {height: 307px; margin: 0 auto 0 0}
+.u-section-projects-1 .u-text-7 {margin-left: 0; margin-bottom: 0; margin-top: 10px}
+.u-section-projects-1 .u-text-8 {margin-left: 0; margin-bottom: 0; margin-top: 20px}
+.u-section-projects-1 .u-layout-cell-5 {min-height: 586px}
+.u-section-projects-1 .u-container-layout-5 {box-shadow: 0 0 8px 0 rgba(128,128,128,1); padding: 30px}
+.u-section-projects-1 .u-image-5 {width: 308px; height: 308px; margin: 1px -1px 0}
+.u-section-projects-1 .u-text-9 {
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-top: 10px
+}
+.u-section-projects-1 .u-text-10 {margin-left: -1px; margin-top: 20px; margin-bottom: 0}
+.u-section-projects-1 .u-layout-cell-6 {min-height: 586px}
+.u-section-projects-1 .u-container-layout-6 {box-shadow: 0 0 8px 0 rgba(128,128,128,1); padding: 30px}
+.u-section-projects-1 .u-image-6 {height: 307px; margin: 0}
+.u-section-projects-1 .u-text-11 {
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-top: 10px
+}
+.u-section-projects-1 .u-text-12 {margin-left: 0; margin-bottom: 0; margin-top: 20px} 
+
+@media (max-width: 1199px){ .u-section-projects-1 .u-sheet-1 {min-height: 500px}
+.u-section-projects-1 .u-layout-cell-1 {min-height: 466px}
+.u-section-projects-1 .u-image-1 {height: 243px; margin-right: initial; margin-left: initial}
+.u-section-projects-1 .u-text-1 {margin-right: 0}
+.u-section-projects-1 .u-layout-cell-2 {min-height: 470px}
+.u-section-projects-1 .u-image-2 {height: 241px; margin-right: initial; margin-left: initial}
+.u-section-projects-1 .u-layout-cell-3 {min-height: 466px}
+.u-section-projects-1 .u-image-3 {height: 243px; margin-right: initial; margin-left: initial}
+.u-section-projects-1 .u-layout-cell-4 {min-height: 466px}
+.u-section-projects-1 .u-image-4 {height: 243px; margin-right: initial; margin-left: initial}
+.u-section-projects-1 .u-layout-cell-5 {min-height: 483px}
+.u-section-projects-1 .u-image-5 {width: 240px; height: 240px; margin-left: 0; margin-right: 0}
+.u-section-projects-1 .u-text-10 {margin-left: 0}
+.u-section-projects-1 .u-layout-cell-6 {min-height: 483px}
+.u-section-projects-1 .u-image-6 {height: 243px; margin-right: initial; margin-left: initial} }
+
+@media (max-width: 991px){ .u-section-projects-1 .u-layout-cell-1 {min-height: 100px}
+.u-section-projects-1 .u-image-1 {height: 173px; margin-right: initial; margin-left: initial}
+.u-section-projects-1 .u-layout-cell-2 {min-height: 100px}
+.u-section-projects-1 .u-image-2 {height: 171px; margin-right: initial; margin-left: initial}
+.u-section-projects-1 .u-layout-cell-3 {min-height: 100px}
+.u-section-projects-1 .u-image-3 {height: 173px; margin-right: initial; margin-left: initial}
+.u-section-projects-1 .u-layout-cell-4 {min-height: 100px}
+.u-section-projects-1 .u-image-4 {height: 173px; margin-right: initial; margin-left: initial}
+.u-section-projects-1 .u-layout-cell-5 {min-height: 100px}
+.u-section-projects-1 .u-image-5 {width: 167px; height: 167px}
+.u-section-projects-1 .u-layout-cell-6 {min-height: 100px}
+.u-section-projects-1 .u-image-6 {height: 173px; margin-right: initial; margin-left: initial} }
+
+@media (max-width: 767px){ .u-section-projects-1 .u-container-layout-1 {padding-left: 10px; padding-right: 10px}
+.u-section-projects-1 .u-image-1 {height: 500px; margin-right: initial; margin-left: initial}
+.u-section-projects-1 .u-container-layout-2 {padding-left: 10px; padding-right: 10px}
+.u-section-projects-1 .u-image-2 {height: 494px; margin-right: initial; margin-left: initial}
+.u-section-projects-1 .u-container-layout-3 {padding-left: 10px; padding-right: 10px}
+.u-section-projects-1 .u-image-3 {height: 500px; margin-right: initial; margin-left: initial}
+.u-section-projects-1 .u-container-layout-4 {padding-left: 10px; padding-right: 10px}
+.u-section-projects-1 .u-image-4 {height: 500px; margin-right: initial; margin-left: initial}
+.u-section-projects-1 .u-container-layout-5 {padding-left: 10px; padding-right: 10px}
+.u-section-projects-1 .u-text-9 {margin-left: 3px}
+.u-section-projects-1 .u-container-layout-6 {padding-left: 10px; padding-right: 10px}
+.u-section-projects-1 .u-image-6 {height: 500px; margin-right: initial; margin-left: initial}
+.u-section-projects-1 .u-text-11 {margin-left: 3px} }
+
+@media (max-width: 575px){ .u-section-projects-1 .u-image-1 {height: 308px; margin-right: initial; margin-left: initial}
+.u-section-projects-1 .u-image-2 {height: 304px; margin-right: initial; margin-left: initial}
+.u-section-projects-1 .u-image-3 {height: 308px; margin-right: initial; margin-left: initial}
+.u-section-projects-1 .u-image-4 {height: 308px; margin-right: initial; margin-left: initial}
+.u-section-projects-1 .u-text-9 {margin-left: 2px}
+.u-section-projects-1 .u-image-6 {height: 308px; margin-right: initial; margin-left: initial}
+.u-section-projects-1 .u-text-11 {margin-left: 2px} }

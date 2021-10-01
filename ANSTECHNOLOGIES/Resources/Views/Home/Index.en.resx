@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Address" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="AddressDesc" xml:space="preserve">
+    <value>4th lane Koltsova d. 51, office 224, Minsk 220089, Belarus</value>
+  </data>
+  <data name="AIBasedSystems" xml:space="preserve">
+    <value>AI based systems</value>
+  </data>
+  <data name="AlphaRecyclageDesc" xml:space="preserve">
+    <value>Development of software for PLC (Omron) and SCADA-system (WinCC). Selection of instrumentation equipment, commissioning, reports.</value>
+  </data>
+  <data name="Analytics" xml:space="preserve">
+    <value>Analytics</value>
+  </data>
+  <data name="AnalyticsDesc" xml:space="preserve">
+    <value>Analyzing company data is a way to gain competitive advantage and leadership in your industry.</value>
+  </data>
+  <data name="ANSpricingLinkdesc" xml:space="preserve">
+    <value>Automatic pricing and inventory control for online and offline retail.</value>
+  </data>
+  <data name="BMZ" xml:space="preserve">
+    <value>BMZ Zhlobin</value>
+  </data>
+  <data name="BMZDesc" xml:space="preserve">
+    <value>Development of software for PLC (Siemens S7-400) and SCADA-system (WinCC), software for PLC (Omron) and operator panel (Weintek).</value>
+  </data>
+  <data name="BTS" xml:space="preserve">
+    <value>BTS Bobruisk</value>
+  </data>
+  <data name="BTSDesc" xml:space="preserve">
+    <value>Management of software development for PLC (Omron) and SCADA-system (Wonderware). Redundant server, video wall, 7 seats operator, Web client.</value>
+  </data>
+  <data name="DataVisioLinkdesc" xml:space="preserve">
+    <value>Artificial intelligence-based exchange analytics. Automated trading on over 130 exchanges.</value>
+  </data>
+  <data name="DevAnalyticsSystemTitle" xml:space="preserve">
+    <value>Development of Analytical Systems Based on Artificial Intelligence</value>
+  </data>
+  <data name="DevLink" xml:space="preserve">
+    <value>Development</value>
+  </data>
+  <data name="ExchangeAnalytics" xml:space="preserve">
+    <value>Exchange analytics</value>
+  </data>
+  <data name="ExchangeAnalyticsDesc" xml:space="preserve">
+    <value>AI technologies can analyze a wide range of stock data.</value>
+  </data>
+  <data name="Forecasting" xml:space="preserve">
+    <value>Forecasting</value>
+  </data>
+  <data name="ForecastingDesc" xml:space="preserve">
+    <value>Artificial intelligence and big data analytics enable forecasting for any industry.</value>
+  </data>
+  <data name="HomeLink" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="LearnMore" xml:space="preserve">
+    <value>Learn more</value>
+  </data>
+  <data name="LightsamericaDesc" xml:space="preserve">
+    <value>Work was done to optimize the database, create visual cataloging tools. Used C # 7+, .Net Core 2.0+, docker, docker-compose.</value>
+  </data>
+  <data name="Mail" xml:space="preserve">
+    <value>Mail</value>
+  </data>
+  <data name="NetDev" xml:space="preserve">
+    <value>.NET development</value>
+  </data>
+  <data name="NetLinkdesc" xml:space="preserve">
+    <value>Full stack .NET development for projects of any complexity and stages of development.</value>
+  </data>
+  <data name="OnlyMath" xml:space="preserve">
+    <value>Only math!</value>
+  </data>
+  <data name="OurProjects" xml:space="preserve">
+    <value>OUR PROJECTS</value>
+  </data>
+  <data name="OurTeam" xml:space="preserve">
+    <value>OUR TEAM</value>
+  </data>
+  <data name="OurTeamDesc1" xml:space="preserve">
+    <value>The ANS Technologies team is a friendly team of professionals who love their job.</value>
+  </data>
+  <data name="OurTeamDesc2" xml:space="preserve">
+    <value>We are attentive to all the wishes of our customers, are open to dialogue and can always help you find the right technical solution for your business processes.</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="ProjectsLink" xml:space="preserve">
+    <value>Projects</value>
+  </data>
+  <data name="Props" xml:space="preserve">
+    <value>Requisites</value>
+  </data>
+  <data name="PropsDesc" xml:space="preserve">
+    <value>UNP 193152788, BY 15BPSB30123074960149330000 in OJSC BPS-Sberbank, Minsk blvd. Mulyavina, 6, BIK BPSBBY2X</value>
+  </data>
+  <data name="Retail" xml:space="preserve">
+    <value>Retail</value>
+  </data>
+  <data name="RetailDesc" xml:space="preserve">
+    <value>Neural networks can predict inventory balances and best prices for online and offline retail.</value>
+  </data>
+  <data name="Robototech" xml:space="preserve">
+    <value>Robotics</value>
+  </data>
+  <data name="RobototechDesc" xml:space="preserve">
+    <value>AI can control any robotic systems.</value>
+  </data>
+  <data name="SellberyDesc" xml:space="preserve">
+    <value>Build a high-load database architecture and SOA-based architecture capable of handling several million operations per minute.</value>
+  </data>
+  <data name="SoftwareForOurClients" xml:space="preserve">
+    <value>The software for our clients and our own projects is developed on the basis of the Microsoft .NET platform, as well as SCADA, in C #, PHP, Python. We provide full-stack development services and make turnkey projects, from design and writing technical specifications to testing and integration of finished products.</value>
+  </data>
+  <data name="TeamLink" xml:space="preserve">
+    <value>Team</value>
+  </data>
+  <data name="Using" xml:space="preserve">
+    <value>Control</value>
+  </data>
+  <data name="UsingDesc" xml:space="preserve">
+    <value>Artificial intelligence allows you to control any production and office processes.</value>
+  </data>
+  <data name="UsingLink" xml:space="preserve">
+    <value>Where AI is used?</value>
+  </data>
+  <data name="WeAlwaysOpen" xml:space="preserve">
+    <value>We are always open to mutually beneficial cooperation!</value>
+  </data>
+  <data name="WhereCanUse" xml:space="preserve">
+    <value>Where I can use</value>
+  </data>
+    
+  <data name="OurCurrentProjects" xml:space="preserve">
+    <value>Our current projects</value>
+  </data>
+</root>
